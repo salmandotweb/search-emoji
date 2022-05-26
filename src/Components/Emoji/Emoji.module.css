@@ -10,6 +10,7 @@
 	justify-content: center;
 	cursor: pointer;
 	transition: 250ms all;
+	position: relative;
 }
 .emoji:hover {
 	transform: scale(1.05);
@@ -27,4 +28,33 @@
 	margin-top: 0.5rem;
 	font-size: 1.5rem;
 	text-align: center;
+}
+.copied {
+	box-shadow: 0 0.01rem 0.5rem green;
+}
+.emoji:active {
+	box-shadow: 0 0.01rem 0.5rem green;
+}
+.emoji:hover {
+	box-shadow: 0 0.01rem 0.5rem green;
+}
+.copiedEmoji {
+	position: absolute;
+	right: 1%;
+	top: 1%;
+	padding: 2rem 2rem;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999999999;
+	animation: copied 250ms ease-in;
+}
+@keyframes copied {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

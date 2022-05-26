@@ -27,8 +27,20 @@ body {
 	font-size: 1.6rem;
 	background: var(--dark-mode);
 	color: var(--white);
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	width: 0.7rem;
 }
 
+body::-webkit-scrollbar-track {
+	background-color: var(--dark-mode);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--white);
+	border-radius: 1rem;
+}
 code {
 	font-family: "Poppins", sans-serif;
 }

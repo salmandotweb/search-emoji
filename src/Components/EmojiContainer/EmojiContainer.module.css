@@ -5,3 +5,21 @@
 	grid-gap: 20px;
 	align-items: stretch;
 }
+.inputContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+.input {
+	border: none;
+	background: var(--black);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	width: 40rem;
+	color: var(--white);
+	font-family: inherit;
+	font-size: 1.5rem;
+	box-shadow: 0 0.01rem 0.5rem #aaa;
+}
